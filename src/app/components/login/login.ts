@@ -24,7 +24,8 @@ ngOnInit() {
   if (!usuariosGuardados) {
     const usuarios = [
       { username: 'andrea', password: '1234' },
-      { username: 'luna', password: '1234' }
+      { username: 'luna', password: '1234' },
+      { username: 'emiliano', password: '12345' },
     ];
 
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
@@ -51,6 +52,4 @@ ngOnInit() {
       alert('Usuario o contraseña incorrectos');
 
     }
-
-
 }}
