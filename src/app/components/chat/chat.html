@@ -8,13 +8,32 @@
     <div class="chat-primero">
     
         <header class="chat-header">
-        <h2>Chat</h2>
+            <img 
+            [src]="usuarioActivo.avatar" 
+            class="avatar-header"
+            />
+
+            <div class="info">
+                <h3>{{ usuarioActivo.nombre }}</h3>
+
+                <p>
+                @if (usuarioActivo.online) {
+                En línea 🟢
+                } @else {
+                Últ. vez: {{ usuarioActivo.lastSeen }}
+                }
+                </p>
+                </div>
+        
         </header>
 
         <div class="chat-messages"> 
         @for (msg of usuarioActivo.mensajes; track $index) {
             <div class="mensaje" [class.mi]="msg.mio" [class.otro]="!msg.mio">
         {{ msg.texto }}
+        @if (msg.imagen) {
+      <img [src]="msg.imagen" class="imagen-chat" />
+    }
     </div>
   }
 

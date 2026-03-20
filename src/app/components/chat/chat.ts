@@ -15,13 +15,15 @@ export class Chat {
   usuarios = [
   {
     id: 1,
-    nombre: 'Luna',
-    avatar: 'https://st2.depositphotos.com/4967775/11238/v/450/depositphotos_112387970-stock-illustration-avatar-girls-icon-vector-woman.jpg',
-    lastSeen: 'Hace 1 hora',
-    online: false,
+    nombre: 'Emiliano',
+    avatar: 'https://i.pinimg.com/736x/ca/02/e0/ca02e07e3875d350d7cde6d0bbe3dbb5.jpg',
+    lastSeen: 'En linea',
+    online: true,
     mensajes: [
-      { texto: 'Holaaaaaa', mio: false },
-      { texto: 'Holii', mio: true }
+      { texto: 'Te recuerdo que', mio: false },
+      { texto: 'tenes que hacer la tarea', mio: false },
+      { texto: '¿Has terminado ya?', mio: false },
+      { texto: 'Mirá esto', imagen: 'https://media.tenor.com/XM45GfarmEgAAAAj/sseeyall-bubu-dudu.gif', mio: false }
     ]
   },
   {
@@ -37,18 +39,18 @@ export class Chat {
       { texto: 'Contestaaa', mio: false },
     ]
   },
+  
   {
     id: 3,
-    nombre: 'Emiliano',
-    avatar: 'https://i.pinimg.com/736x/ca/02/e0/ca02e07e3875d350d7cde6d0bbe3dbb5.jpg',
-    lastSeen: 'En linea',
-    online: true,
+    nombre: 'Luna',
+    avatar: 'https://st2.depositphotos.com/4967775/11238/v/450/depositphotos_112387970-stock-illustration-avatar-girls-icon-vector-woman.jpg',
+    lastSeen: 'Hace 1 hora',
+    online: false,
     mensajes: [
-      { texto: 'Te recuerdo que', mio: false },
-      { texto: 'tener que hacer la tarea', mio: true },
-      { texto: '¿Has terminado ya?', mio: false },
+      { texto: 'Holaaaaaa', mio: false },
+      { texto: 'Holii', mio: true }
     ]
-  }
+  },
   ]
   usuarioActivo = this.usuarios[0];
 
