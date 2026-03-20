@@ -2,7 +2,7 @@
 .chat-container {
   display: flex;
   height: 100vh;
-  background: #51555c;
+  background: #939aaa;
   color: #f4f4f5;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -124,6 +124,7 @@ h2{
   margin-right: 10px;
 }
 
+
 /* Estilos para dispositivos móviles */
 
 
@@ -163,4 +164,43 @@ h2{
   .chat-input button {
     width: 100%;
   }
+}
+
+.iconos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.iconos i {
+  font-size: 20px;
+  color: #dddae0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.iconos i:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+.nuevo-chat {
+  
+  margin: 20px;
+  margin-top: 40px;
+  background: #cba6f7;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 0px;
+}
+
+.nuevo-chat:hover {
+  background: #a855f7;
+  transform: scale(1.1);
 }

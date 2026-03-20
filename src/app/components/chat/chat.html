@@ -3,7 +3,11 @@
     <app-sidebar 
   [usuarios]="usuarios"
   (usuarioSeleccionado)="seleccionarUsuario($event)">
-  </app-sidebar>
+  </app-sidebar>  
+  
+  <button class="nuevo-chat">
+  <i class="fa-solid fa-comment-medical"></i>
+</button>
 
     <div class="chat-primero">
     
@@ -37,13 +41,15 @@
     </div>
   }
 
-    </div>
-        
 
+   
+    </div>
         <form (ngSubmit)="enviarMensaje()" class="chat-input">
-        <i class="fa-solid fa-photo-film"></i>
-        <i class="fa-solid fa-camera"></i>
-        <i class="fa-solid fa-paperclip"></i>
+            <div class="iconos">
+                <i class="fa-solid fa-photo-film"></i>
+                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-paperclip"></i>
+            </div>
             <input 
                 type="text" 
                 placeholder="Escribí un mensaje..." 
