@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,6 +9,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
   templateUrl: './login.html',
   styleUrl: './login.css'
 })
+
 
 export class Login {
 
@@ -22,6 +24,13 @@ export class Login {
       alert('Completá los campos');
       return;
     }
+
+     localStorage.setItem('usuario', this.usuario.value);
+
+    this.router.navigate(['/chat']);
+
     };
-  
+  constructor(private router: Router) {}
+
+
 } 
