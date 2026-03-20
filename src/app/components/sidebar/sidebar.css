@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  width: 250px;
+}
+
+.sidebar {
+  width: 240px;
+  background: #313338;
+  padding: 15px;
+  border-right: 1px solid #444;
+}
+
+.sidebar h2 {
+  font-size: 14px;
+  color: #f5c2e7;
+  margin-bottom: 10px;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar li:hover {
+  background: #f5c2e720; 
+}

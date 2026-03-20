@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [ReactiveFormsModule],
   templateUrl: './login.html',
-  styleUrl: './login.css'
+  styleUrl: './login.css',
 })
 
 
@@ -25,7 +25,7 @@ export class Login {
       return;
     }
 
-     localStorage.setItem('usuario', this.usuario.value);
+    localStorage.setItem('usuario', this.usuario.value);
 
     this.router.navigate(['/chat']);
 
