@@ -17,5 +17,11 @@ export class Login {
   login() {
     console.log('Usuario:', this.usuario.value);
     console.log('Password:', this.password.value);
+
+    if (!this.usuario.value || !this.password.value) {
+      alert('Completá los campos');
+      return;
+    }
+    };
   
-} }
+} 
