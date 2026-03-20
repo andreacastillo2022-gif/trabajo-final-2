@@ -29,7 +29,7 @@ export class Chat {
   {
     id: 2,
     nombre: 'Andrea',
-    avatar: 'https://st2.depositphotos.com/4967775/11255/v/450/depositphotos_112551512-stock-illustration-avatar-girls-icon-vector-woman.jpg',
+    avatar: 'https://i.pinimg.com/736x/43/69/0a/43690ad3ce2628328e65ad8e272a30b5.jpg',
     lastSeen: 'Hace 2 horas',
     online: false,
     mensajes: [
@@ -51,6 +51,22 @@ export class Chat {
       { texto: 'Holii', mio: true }
     ]
   },
+
+   {
+    id: 4,
+    nombre: 'Norma',
+    avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYABssYssgy6p2GygHbNn0nsqHdGxr1M_G2g&s',
+    lastSeen: 'En linea',
+    online: true,
+    mensajes: [
+      { texto: 'Espero que este todo bien', mio: false },
+      { texto: 'Buenos dias', mio: true },
+      { texto: 'Avisame', mio: false },
+      { texto: 'cuando estes libre.', mio: false },
+    ]
+  },
+
+
   ]
   usuarioActivo = this.usuarios[0];
 
