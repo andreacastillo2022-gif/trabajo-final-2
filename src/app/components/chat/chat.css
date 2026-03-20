@@ -97,3 +97,44 @@ h2{
   border-radius: 50%;
   margin-right: 10px;
 }
+
+/* Estilos para dispositivos móviles */
+
+
+ 
+
+@media (max-width: 600px) {
+
+  .chat-container {
+    flex-direction: column;
+  }
+
+  .chat-primero {
+    padding: 0;
+  }
+
+  .chat-header {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .chat-messages {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .chat-input {
+    margin: 0;
+    border-radius: 0;
+    flex-direction: column !important;
+    gap: 15px;
+  }
+
+  .chat-input input {
+    width: 100%;
+  }
+
+  .chat-input button {
+    width: 100%;
+  }
+}
