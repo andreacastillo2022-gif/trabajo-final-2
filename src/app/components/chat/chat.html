@@ -1,6 +1,9 @@
 <main class="chat-container">
     
-    <app-sidebar></app-sidebar>
+    <app-sidebar 
+  [usuarios]="usuarios"
+  (usuarioSeleccionado)="seleccionarUsuario($event)">
+  </app-sidebar>
 
     <div class="chat-primero">
     
@@ -9,8 +12,12 @@
         </header>
 
         <div class="chat-messages">
-        <article class="mensaje otro">Hola</article>
-        <article class="mensaje mi">Hola como estas</article>
+        @for (msg of usuarioActivo.mensajes; track $index) {
+            <div class="mensaje" [class.mi]="msg.mio" [class.otro]="!msg.mio">
+        {{ msg.texto }}
+    </div>
+  }
+
         </div>
 
         <form class="chat-input">

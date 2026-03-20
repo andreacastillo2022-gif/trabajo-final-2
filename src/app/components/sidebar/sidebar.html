@@ -1,8 +1,11 @@
 <aside class="sidebar">
-        <h2>Chats</h2>
-            <ul>
-                <li>Chat 1</li>
-                <li>Chat 2</li>
-                <li>Chat 3</li>
-            </ul>
-    </aside>
+    <ul>
+
+        @for (user of usuarios; track user.id) {
+        <li (click)="seleccionar(user)">
+            <img [src]="user.avatar" class="avatar" />
+            {{ user.nombre }}
+        </li>
+        }
+    </ul>
+</aside>
