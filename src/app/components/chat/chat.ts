@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 import { Sidebar } from '../sidebar/sidebar';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-chat',  
   standalone: true,
-  imports: [Sidebar],
+  imports: [Sidebar, FormsModule],
   templateUrl: './chat.html',
   styleUrl: './chat.css',
 })
-export class Chat {
+export class Chat { 
+  
+  mensajeNuevo = ' ';
   
   usuarios = [
   {
@@ -35,5 +38,27 @@ export class Chat {
 
   seleccionarUsuario(user: any) {
     this.usuarioActivo = user;
+  }
+
+  enviarMensaje() {
+
+    if (!this.mensajeNuevo.trim()) return;
+    this.usuarioActivo.mensajes.push({
+      texto: this.mensajeNuevo,
+      mio: true
+    });
+
+    const texto = this.mensajeNuevo;
+    this.mensajeNuevo = '';
+
+    setTimeout(() => {
+      this.usuarioActivo.mensajes.push({
+        texto: 'Respuesta automática',
+        mio: false
+      });
+    }, 1000);
+  
+
   }};
+
 

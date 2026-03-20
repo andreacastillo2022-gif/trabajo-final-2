@@ -18,11 +18,15 @@
     </div>
   }
 
-        </div>
+    </div>
 
-        <form class="chat-input">
-            <input type="text" placeholder="Escribí un mensaje..." />
-            <button>Enviar</button>
+        <form (ngSubmit)="enviarMensaje()" class="chat-input">
+            <input 
+                type="text" 
+                placeholder="Escribí un mensaje..." 
+                [(ngModel)]="mensajeNuevo" 
+            />
+            <button type="submit">Enviar</button>
         </form>
     </div>
 
