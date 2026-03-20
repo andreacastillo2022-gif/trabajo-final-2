@@ -1,8 +1,9 @@
 <aside class="sidebar">
+    <h1>Mensajes</h1>
     <ul>
 
         @for (user of usuarios; track user.id) {
-        <li (click)="seleccionar(user)">
+        <li (click)="seleccionar(user)" class="nombre">
             <img [src]="user.avatar" class="avatar" />
             {{ user.nombre }}
         </li>
