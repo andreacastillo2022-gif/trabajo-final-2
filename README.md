@@ -1,59 +1,40 @@
-# TrabajoFinal
+# TrabajoFinal: Chat Web en Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.3.
+## Descripción
+Este proyecto consiste en el desarrollo de una aplicación de chat realizada con Angular, permite la interacción entre usuarios mediante una interfaz moderna y dinámica, aunque con usuarios desde el LocalStorage.
 
-## Development server
+El objetivo principal fue implementar una estructura de chat funcional, incluyendo una lista de conversaciones, visualización de mensajes y una interfaz intuitiva similar a aplicaciones como whatsapp, discord, telegram, etc.
 
-To start a local development server, run:
+## Funcionalidades
+- Lista de chats/conversaciones
+- Visualización de usuarios con imagen de perfil
+- Envío de mensajes y respuesta automatica con delay.
+- Iconos para agregar contenido (imágenes, archivos, etc.), solo esteticos.
+- Diseño responsive (adaptable a distintos dispositivos)
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Tecnologías utilizadas
+- Angular  
+- HTML5  
+- CSS3  
+- Font Awesome (iconos)
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+# Cómo ejecutar el proyecto
 
-```bash
-ng generate component component-name
-```
+1. Clonar el repositorio y subirlo a la terminal:
+git clone <URL_DEL_REPO>
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## bibliografia
 
-```bash
-ng generate --help
-```
+https://sendbird.com/es/developer/tutorials/how-to-build-an-angular-chat-app
+https://medium.com/@urmalhadiyal/building-a-real-time-chat-application-with-angular-and-net-using-signalr-d1621f74ea8a
+https://angular.dev/guide/components
+https://angular.dev/guide/templates/control-flow
 
-## Building
 
-To build the project run:
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
