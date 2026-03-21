@@ -26,6 +26,7 @@ ngOnInit() {
       { username: 'andrea', password: '1234' },
       { username: 'luna', password: '1234' },
       { username: 'emiliano', password: '1234' },
+      { username: 'norma', password: '1234' },
     ];
 
     localStorage.setItem('usuarios', JSON.stringify(usuarios));

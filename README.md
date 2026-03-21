@@ -1,5 +1,11 @@
 # TrabajoFinal: Chat Web en Angular
 
+contraseñas para entrar, usuarios:
+1. usuario: andrea / contraseña: 1234
+2. usuario: norma / contraseña : 1234
+3. usuario:emiliano / contraseña: 1234
+4. usuario: luna / contraseña: 1234
+
 ## Descripción
 Este proyecto consiste en el desarrollo de una aplicación de chat realizada con Angular, permite la interacción entre usuarios mediante una interfaz moderna y dinámica, aunque con usuarios desde el LocalStorage.
 
@@ -13,6 +19,7 @@ El objetivo principal fue implementar una estructura de chat funcional, incluyen
 - Diseño responsive (adaptable a distintos dispositivos)
 
 ---
+
 
 ## capturas del tp
 ![Contraseña incorrecta](./src/app/components/capturas/contraseña-incorrecta.png)
@@ -31,7 +38,7 @@ El objetivo principal fue implementar una estructura de chat funcional, incluyen
 # Cómo ejecutar el proyecto
 
 1. Clonar el repositorio y subirlo a la terminal:
-git clone <URL_DEL_REPO>
+git clone <https://github.com/andreacastillo2022-gif/trabajo-final-2>
 
 ## bibliografia
 
