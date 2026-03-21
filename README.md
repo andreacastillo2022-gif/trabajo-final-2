@@ -14,6 +14,12 @@ El objetivo principal fue implementar una estructura de chat funcional, incluyen
 
 ---
 
+## capturas del tp
+![Contraseña incorrecta](./src/app/components/capturas/contraseña-incorrecta.png)
+![pagina](./src/app/components/capturas/pagina.png)
+![respuesta automatica](./src/app/components/capturas/respuesta-automatica.png)
+
+
 ## Tecnologías utilizadas
 - Angular  
 - HTML5  

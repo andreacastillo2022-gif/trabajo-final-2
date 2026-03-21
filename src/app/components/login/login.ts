@@ -25,7 +25,7 @@ ngOnInit() {
     const usuarios = [
       { username: 'andrea', password: '1234' },
       { username: 'luna', password: '1234' },
-      { username: 'emiliano', password: '12345' },
+      { username: 'emiliano', password: '1234' },
     ];
 
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
@@ -49,7 +49,9 @@ ngOnInit() {
       window.location.href = '/chat';
     }
     else {
-      alert('Usuario o contraseña incorrectos');
-
+        const h1 = document.querySelector('h1');
+        if (h1) {
+            h1.textContent = 'Usuario o contraseña incorrectos';
+        }
     }
 }}
